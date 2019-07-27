@@ -5,6 +5,7 @@ class CfgPatches
 		units[]={};
 		weapons[]=
 		{
+			//Vanilla
 			"bc036_invisible_carrier_gl",
 			"bc036_invisible_carrier_lite",
 			"bc036_invisible_carrier",
@@ -13,6 +14,7 @@ class CfgPatches
 			"bc036_invisible_lbv",
 			"bc036_invisible_bandollier",
 			"bc036_invisible_tacvest",
+			//Jets
 			"bc036_invisible_deckcrew"
 		};
 		author="bc036";

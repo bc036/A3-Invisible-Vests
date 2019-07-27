@@ -1,5 +1,6 @@
 class cfgWeapons
 {
+	//Vanilla
 	class VestItem;
 	class V_PlateCarrierGL_rgr;
 	class bc036_invisible_carrier_gl: V_PlateCarrierGL_rgr
@@ -311,6 +312,7 @@ class cfgWeapons
 			};
 		};
 	};
+	//Jets
 	class V_DeckCrew_blue_F;
 	class bc036_invisible_deckcrew: V_DeckCrew_blue_F
 	{
