@@ -9,6 +9,7 @@ class cfgWeapons
 		scope=2;
 		displayName="Invisible Carrier GL Rig";
 		model="\bc036s_invisible_vests\Data\null.p3d";
+		modelSides[] = { 0,1,2,3 }; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelectionsTextures[]=
 		{
 			"\bc036s_invisible_vests\Data\null_CA.paa";
@@ -72,6 +73,7 @@ class cfgWeapons
 		scope=2;
 		displayName="Invisible Carrier Lite";
 		model="\bc036s_invisible_vests\Data\null.p3d";
+		modelSides[] = { 0,1,2,3 }; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelectionsTextures[]=
 		{
 			"\bc036s_invisible_vests\Data\null_CA.paa";
@@ -116,6 +118,7 @@ class cfgWeapons
 		scope=2;
 		displayName="Invisible Carrier Rig";
 		model="\bc036s_invisible_vests\Data\null.p3d";
+		modelSides[] = { 0,1,2,3 }; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelectionsTextures[]=
 		{
 			"\bc036s_invisible_vests\Data\null_CA.paa";
@@ -160,6 +163,7 @@ class cfgWeapons
 		scope=2;
 		displayName="Invisible Carrier Special Rig";
 		model="\bc036s_invisible_vests\Data\null.p3d";
+		modelSides[] = { 0,1,2,3 }; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelectionsTextures[]=
 		{
 			"\bc036s_invisible_vests\Data\null_CA.paa";
@@ -220,6 +224,7 @@ class cfgWeapons
 		scope=2;
 		displayName="Invisible Chest Rig";
 		model="\bc036s_invisible_vests\Data\null.p3d";
+		modelSides[] = { 0,1,2,3 }; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelectionsTextures[]=
 		{
 			"\bc036s_invisible_vests\Data\null_CA.paa";
@@ -239,6 +244,7 @@ class cfgWeapons
 		scope=2;
 		displayName="Invisible LBV Harness";
 		model="\bc036s_invisible_vests\Data\null.p3d";
+		modelSides[] = { 0,1,2,3 }; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelectionsTextures[]=
 		{
 			"\bc036s_invisible_vests\Data\null_CA.paa";
@@ -257,6 +263,7 @@ class cfgWeapons
 		scope=2;
 		displayName="Invisible Slash Bandollier";
 		model="\bc036s_invisible_vests\Data\null.p3d";
+		modelSides[] = { 0,1,2,3 }; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelectionsTextures[]=
 		{
 			"\bc036s_invisible_vests\Data\null_CA.paa";
@@ -275,6 +282,7 @@ class cfgWeapons
 		scope=2;
 		displayName="Invisible Tactical Vest";
 		model="\bc036s_invisible_vests\Data\null.p3d";
+		modelSides[] = { 0,1,2,3 }; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelectionsTextures[]=
 		{
 			"\bc036s_invisible_vests\Data\null_CA.paa";
@@ -312,6 +320,54 @@ class cfgWeapons
 			};
 		};
 	};
+	class V_RebreatherB;
+	class bc036_invisible_rebreather : V_RebreatherB
+	{
+		author = "bc036";
+		scope = 2;
+		displayName = "Invsible Rebreather";
+		picture = "\A3\characters_f\Data\UI\icon_V_RebreatherB_CA.paa";
+		model = "\bc036s_invisible_vests\Data\null.p3d";
+		modelSides[] = { 0,1,2,3 }; //OPF_F=0, BLU_F=1, IND_F=2
+		hiddenSelectionsTextures[] =
+		{
+			"\bc036s_invisible_vests\Data\null_CA.paa"
+		};
+		descriptionShort = "$STR_A3_SP_AL_I";
+		class ItemInfo : VestItem
+		{
+			uniformModel = "\bc036s_invisible_vests\Data\null.p3d";
+			containerClass = "Supply0";
+			mass = 80;
+			vestType = "Rebreather";
+			class HitpointsProtectionInfo
+			{
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 8;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.5;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 8;
+					passThrough = 0.5;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.5;
+				};
+			};
+		};
+	};
 	//Jets
 	class V_DeckCrew_blue_F;
 	class bc036_invisible_deckcrew: V_DeckCrew_blue_F
@@ -320,6 +376,7 @@ class cfgWeapons
 		scope=2;
 		displayName="Invisible Deck Crew Vest";
 		model="\bc036s_invisible_vests\Data\null.p3d";
+		modelSides[] = { 0,1,2,3 }; //OPF_F=0, BLU_F=1, IND_F=2
 		hiddenSelectionsTextures[]=
 		{
 			"\bc036s_invisible_vests\Data\null_CA.paa";

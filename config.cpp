@@ -14,6 +14,7 @@ class CfgPatches
 			"bc036_invisible_lbv",
 			"bc036_invisible_bandollier",
 			"bc036_invisible_tacvest",
+			"bc036_invisible_rebreather",
 			//Jets
 			"bc036_invisible_deckcrew"
 		};
@@ -24,8 +25,8 @@ class CfgPatches
 			"A3_Characters_F";
 			"A3_Characters_F_Jets_Vests";
 		};
-		version = "v1.0";
-		requiredVersion=0.1;
+		version = 1.1;
+		requiredVersion=1.1;
 	};
 };
 #include "invisible_vests.hpp"
