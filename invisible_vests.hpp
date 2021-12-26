@@ -1,5 +1,3 @@
-class cfgWeapons
-{
 	//Vanilla
 	class VestItem;
 	class V_PlateCarrierGL_rgr;
@@ -414,4 +412,3 @@ class cfgWeapons
 			};
 		};
 	};
-};

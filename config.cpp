@@ -29,4 +29,7 @@ class CfgPatches
 		requiredVersion=1.1;
 	};
 };
+class cfgWeapons
+{
 #include "invisible_vests.hpp"
+};
